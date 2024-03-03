@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./../logo/logo.png">
+    <link rel="stylesheet" href="./../main.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        hr {
+            border: 1px solid #d2d6deb9;
+            margin-top: 5px;
+            margin-bottom: 3px;
+        }
+        .kolom {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kolom-6 {
+            flex: 1;
+            width: 50%;   
+        }
+        
+        .kolom-6 .item-kolom {
+            text-decoration: none;
+            color: #666;
+        }
+        .kolom-6 .item-kolom .box-kolom {
+            margin: 5px;
+            border: 1px solid #D2D6DE;
+            border-radius: 5px;
+            /* padding-top: 20px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 8px; */
+            transition: all 1s;
+        }
+        
+        .kolom-6 .item-kolom .box-kolom:hover {
+            box-shadow: 4px 6px 5px 0px #D2D6DE;
+        }
+
+        .kolom-6 .item-kolom .box-kolom .box-kolom-header
+        {
+            min-height: 100px;
+            background-color: #D2D6DE;
+            width: 100%;
+        }
+        .kolom-6 .item-kolom .box-kolom .box-kolom-body {
+            padding-top: 20px;
+            padding-left: 12px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="body">
+    <aside class="sidebar">
+        <div class="sidebar-logo-content">
+            <div class="sidebar-logo">
+                <img src="./../logo/logo_amikom_kuning.png" alt="Amikom Mahasiswa Center">
+                <span class="logo-name">UNIVERSITAS AMIKOM</span>
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="./../dashboard/index.html"><i class="bx bx-home-heart"></i> Dashboard</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../jadwal/index.html"><i class="bx bx-calendar"></i> Jadwal</a>
+            </li>
+            <li class="sidebar-item">
+            <a href="./../diskusi/layout.html"><i class="bx bx-calendar"></i> Diskusi</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../ujian/index.html"><i class="bx bx-edit"></i> Ujian</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../isikelas/layout.html"><i class="bx bx-edit"></i> Materi</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../transkripnilai/index.html"><i class="bx bx-archive"></i> Transkip Nilai</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="javascript:void(0)" class="active"><i class="bx bx-medal"></i> Rangking</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../profile/pro.html"><i class="bx bx-user"></i> Profile</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../login/login.html"><i class="bx bx-log-out"></i> Logout</a>
+            </li>
+        </ul>
+    </aside>
+
+    <nav class="topbar">
+        <div class="toggle-sidebar">
+            <a href="javascript:void(0)" class="btn-toggle-sidebar" id="toggle-sidebar-menu">
+                <i class="bx bx-menu"></i>
+            </a>
+        </div>
+        <div class="topbar-profile">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-bell"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-user-circle"></i> Kelompok 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+        <div class="wrapper-header">
+            <h2 class="wrapper-title">
+                Ranking Keaktifan
+            </h2>
+        </div>
+        <div class="wrapper-body">
+            <div class="content">
+                <div class="content-body">
+                    <div class="container">
+                        <div class="title">
+                              <div class="box">
+                                    <h2>Ranking Keaktifan</h2>
+                              </div>       
+                        </div>
+                        <div class="myRank">
+                              <div class="headerMyCard">
+                                    <h3>Ranking saya: </h3>
+                                    <a href="" id="reward">
+                                          <p>Hadiah</p>
+                                          <img src="hadiah.png" alt="">
+                                    </a>
+                              </div>
+            
+                              <div class="myCardRank">
+                                    <table>
+                                          <tr>
+                                                <td><p id="myRank">12/315</p></td>
+                                                <td><img src="prof1.jpg" alt=""></th>
+                                                <td>
+                                                      <div>
+                                                            <p id="myName">Monkey</p>
+                                                            <p id="myNim">20.11.9999</p>
+                                                      </div>
+                                                </td>
+                                                <td>
+                                                      <div id="myScore">
+                                                            <p>Score :  </p>
+                                                            <h4>36</h4>
+                                                      </div>
+                                                </td>
+                                          </tr>
+                                    </table>
+                              </div>
+                        </div>
+            
+                        <div class="title">
+                              <div class="box">
+                                    <h2>Global Ranking</h2>
+                              </div>       
+                        </div>
+            
+                        <div class="midContent">
+                              <div class="midOne">
+                                    <select id="semOp">
+                                          <option>Semester 4-2022</option>
+                                          <option>Semester 5-2022</option>
+                                    </select>
+                                    <div class="search">
+                                          <input type="text" name="" id="" placeholder="cari nama/nim">
+                                          <img src="search-solid.png" alt="">
+                                    </div>
+                              </div>
+                              <div class="midTwo">
+                                    <h3>Ranking table: </h3>
+                                    <p>315 Peserta</p>
+                              </div>
+                        </div>
+            
+                        <div class="rankingTable">
+                              <table>
+                                    <tbody>
+                                          <tr>      
+                                                <td>1</td>
+                                                <td><img src="prof1.jpg" alt=""></td>
+                                                <td>
+                                                      <div id="nameNim">
+                                                            <p>Abdillah Pramudito</p>
+                                                            <p>20.11.3564</p>
+                                                      </div>
+                                                </td>
+                                                <td id="scoreTable">36</td>
+                                          </tr>
+                                          <tr>      
+                                                <td>2</td>
+                                                <td><img src="prof1.jpg" alt=""></td>
+                                                <td>
+                                                      <div id="nameNim">
+                                                            <p>Abdillah Pramudito</p>
+                                                            <p>20.11.3564</p>
+                                                      </div>
+                                                </td>
+                                                <td id="scoreTable">36</td>
+                                          </tr>
+                                          <tr>      
+                                                <td>3</td>
+                                                <td><img src="prof1.jpg" alt=""></td>
+                                                <td>
+                                                      <div id="nameNim">
+                                                            <p>Abdillah Pramudito</p>
+                                                            <p>20.11.3564</p>
+                                                      </div>
+                                                </td>
+                                                <td id="scoreTable">36</td>
+                                          </tr>
+                                          <tr>      
+                                                <td>4</td>
+                                                <td><img src="prof1.jpg" alt=""></td>
+                                                <td>
+                                                      <div id="nameNim">
+                                                            <p>Abdillah Pramudito</p>
+                                                            <p>20.11.3564</p>
+                                                      </div>
+                                                </td>
+                                                <td id="scoreTable">36</td>
+                                          </tr>
+                                          <tr>      
+                                                <td>5</td>
+                                                <td><img src="prof1.jpg" alt=""></td>
+                                                <td>
+                                                      <div id="nameNim">
+                                                            <p>Abdillah Pramudito</p>
+                                                            <p>20.11.3564</p>
+                                                      </div>
+                                                </td>
+                                                <td id="scoreTable">36</td>
+                                          </tr>
+                                          <tr>      
+                                                <td>6</td>
+                                                <td><img src="prof1.jpg" alt=""></td>
+                                                <td>
+                                                      <div id="nameNim">
+                                                            <p>Abdillah Pramudito</p>
+                                                            <p>20.11.3564</p>
+                                                      </div>
+                                                </td>
+                                                <td id="scoreTable">36</td>
+                                          </tr>
+                                          <tr>      
+                                                <td>7</td>
+                                                <td><img src="prof1.jpg" alt=""></td>
+                                                <td>
+                                                      <div id="nameNim">
+                                                            <p>Abdillah Pramudito</p>
+                                                            <p>20.11.3564</p>
+                                                      </div>
+                                                </td>
+                                                <td id="scoreTable">36</td>
+                                          </tr>
+                                    </tbody>
+                              </table>
+                        </div>
+                  </div>
+                  
+            
+                  <script type="text/javascript" src="vanilla-tilt.js"></script>
+                  <script>
+                        VanillaTilt.init(document.querySelector(".myCardRank"), {
+                        max: 25,
+                        speed: 400,
+                        glare: true
+            
+                  });
+                  
+                  </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <span>&copy; Design &amp; Develop by <strong>Kelompok 11</strong></span>
+        </div>
+        <div class="datetime">
+            <span>20 Juni 2022, 10:54 Pagi</span>
+        </div>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+</html>

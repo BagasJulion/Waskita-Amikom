@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" );
+
+
+/* 
+    old purple: #561543
+    magenta purple: #8B073B
+    pink purple: #BF0032
+    orange: #F25225
+    yellow: #F2BA00
+*/
+
+*
+{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height:100vh;
+    background-color: #fff;
+    padding:60px;
+    border-width: 4px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    background:  #561543;
+    border-radius: 15px; 
+    font-size: 18px;
+}
+
+
+.container h1, .container h4 {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+}
+
+.title-container {
+    padding-top: 10px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container img {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .login {
+    width: 400px;
+    margin-top: 50px;
+}
+.container .login input {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+.container .login form p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.container .login form p label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.container .login form button {
+    margin-left: 20%;
+    margin-top: 40px;
+    display: block;
+    width: 50%;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background:#BF0032; 
+    color: #fff;
+}
+.container .login form p a {
+    color: #fff;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+
+ 

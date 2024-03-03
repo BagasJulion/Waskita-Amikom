@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./../logo/logo.png">
+    <link rel="stylesheet" href="./../main.css">
+    <style>
+        hr {
+            border: 1px solid #d2d6deb9;
+            margin-top: 5px;
+            margin-bottom: 3px;
+        }
+        .kolom {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kolom-6 {
+            flex: 1;
+            width: 50%;   
+        }
+        
+        .kolom-6 .item-kolom {
+            text-decoration: none;
+            color: #666;
+        }
+        .kolom-6 .item-kolom .box-kolom {
+            margin: 5px;
+            border: 1px solid #D2D6DE;
+            border-radius: 5px;
+            /* padding-top: 20px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 8px; */
+            transition: all 1s;
+        }
+        
+        .kolom-6 .item-kolom .box-kolom:hover {
+            box-shadow: 4px 6px 5px 0px #D2D6DE;
+        }
+
+        .kolom-6 .item-kolom .box-kolom .box-kolom-header
+        {
+            min-height: 100px;
+            background-color: #D2D6DE;
+            width: 100%;
+        }
+        .kolom-6 .item-kolom .box-kolom .box-kolom-body {
+            padding-top: 20px;
+            padding-left: 12px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="body">
+    <aside class="sidebar">
+        <div class="sidebar-logo-content">
+            <div class="sidebar-logo">
+                <img src="./../logo/logo_amikom_kuning.png" alt="Amikom Mahasiswa Center">
+                <span class="logo-name">UNIVERSITAS AMIKOM</span>
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="./../dashboard/index.html"><i class="bx bx-home-heart"></i> Dashboard</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../jadwal/index.html"><i class="bx bx-calendar"></i> Jadwal</a>
+            </li>
+            <li class="sidebar-item">
+            <a href="./../diskusi/layout.html"><i class="bx bx-calendar"></i> Diskusi</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../ujian/index.html"><i class="bx bx-edit"></i> Ujian</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="javascript:void(0)" class="active"><i class="bx bx-edit"></i> Materi</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../transkripnilai/index.html"><i class="bx bx-archive"></i> Transkip Nilai</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../ranking/index.html"><i class="bx bx-medal"></i> Rangking</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../profile/pro.html"><i class="bx bx-user"></i> Profile</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../login/login.html"><i class="bx bx-log-out"></i> Logout</a>
+            </li>
+        </ul>
+    </aside>
+
+    <nav class="topbar">
+        <div class="toggle-sidebar">
+            <a href="javascript:void(0)" class="btn-toggle-sidebar" id="toggle-sidebar-menu">
+                <i class="bx bx-menu"></i>
+            </a>
+        </div>
+        <div class="topbar-profile">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-bell"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-user-circle"></i> Kelompok 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+        <div class="wrapper-header">
+            <h2 class="wrapper-title">
+                MATA KULIAH
+            </h3>
+        </div>
+        <div class="wrapper-body">
+            <div class="content">
+                <div class="content-header">
+                    <h3 class="content-title">
+                        <h1>MATA KULIAH YANG DITEMPUH</h1>
+                        <p><a href="" class="link">Dashboard</a> / <a href="" class="link">Kursus Saya</a> / <a href="" class="link">Mata Kuliah</a></p>
+                    </h3>
+                </div>
+                <fieldset class="pertemuan">
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 1</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 1</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 2</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 2</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 2</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 3</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 3</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 3</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 4</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 4</a></p>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 4</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 5</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 5</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 6</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 6</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 7</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 7</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 7</a></p>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 7</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>UTS</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan UTS</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 8</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 8</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 8</a></p>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 8</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 9</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 9</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 10</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 10</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 10</a></p>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 10</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 11</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 11</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 11</a></p>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 11</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 12</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 12</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 12</a></p>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 12</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 13</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/pdf.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Materi Pertemuan 13</a></p>
+                        <p><img src="aset/kamera.png" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Video Pertemuan 13</a></p>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 13</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>Pertemuan 14</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan Tugas Pertemuan 14</a></p>
+                    </div>
+                    <div class="materi">
+                        <div class="checkbox">
+                            <h2>UAS</h2>
+                            <input type="checkbox">
+                        </div>
+                        <p><img src="aset/drive.jpg" alt="" width="15px" height="15px"><a href="" class="pembelajaran"> Pengumpulan UAS</a></p>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <span>&copy; Design &amp; Develop by <strong>Kelompok 14</strong></span>
+        </div>
+        <div class="datetime">
+            <span>20 Juni 2022, 10:54 Pagi</span>
+        </div>
+    </footer>
+</body>
+</html>

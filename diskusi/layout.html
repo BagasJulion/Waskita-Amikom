@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./../logo/logo.png">
+    <link rel="stylesheet" href="./../main.css">
+    <style>
+        hr {
+            border: 1px solid #d2d6deb9;
+            margin-top: 5px;
+            margin-bottom: 3px;
+        }
+        .kolom {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .kolom-6 {
+            flex: 1;
+            width: 50%;   
+        }
+        
+        .kolom-6 .item-kolom {
+            text-decoration: none;
+            color: #666;
+        }
+        .kolom-6 .item-kolom .box-kolom {
+            margin: 5px;
+            border: 1px solid #D2D6DE;
+            border-radius: 5px;
+            /* padding-top: 20px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 8px; */
+            transition: all 1s;
+        }
+        
+        .kolom-6 .item-kolom .box-kolom:hover {
+            box-shadow: 4px 6px 5px 0px #D2D6DE;
+        }
+
+        .kolom-6 .item-kolom .box-kolom .box-kolom-header
+        {
+            min-height: 100px;
+            background-color: #D2D6DE;
+            width: 100%;
+        }
+        .kolom-6 .item-kolom .box-kolom .box-kolom-body {
+            padding-top: 20px;
+            padding-left: 12px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body class="body">
+    <aside class="sidebar">
+        <div class="sidebar-logo-content">
+            <div class="sidebar-logo">
+                <img src="./../logo/logo_amikom_kuning.png" alt="Amikom Mahasiswa Center">
+                <span class="logo-name">UNIVERSITAS AMIKOM</span>
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-item">
+                <a href="javascript:void(0)"><i class="bx bx-home-heart"></i> Dashboard</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../jadwal/index.html"><i class="bx bx-calendar"></i> Jadwal</a>
+            </li>
+            <li class="sidebar-item">
+            <a href="javascript:void(0)" class="active"><i class="bx bx-calendar"></i> Diskusi</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../ujian/index.html"><i class="bx bx-edit"></i> Ujian</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../isikelas/layout.html"><i class="bx bx-edit"></i> Materi</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../transkripnilai/index.html"><i class="bx bx-archive"></i> Transkip Nilai</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../ranking/index.html"><i class="bx bx-medal"></i> Rangking</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../profile/pro.html"><i class="bx bx-user"></i> Profile</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="./../login/login.html"><i class="bx bx-log-out"></i> Logout</a>
+            </li>
+        </ul>
+    </aside>
+
+    <nav class="topbar">
+        <div class="toggle-sidebar">
+            <a href="javascript:void(0)" class="btn-toggle-sidebar" id="toggle-sidebar-menu">
+                <i class="bx bx-menu"></i>
+            </a>
+        </div>
+        <div class="topbar-profile">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-bell"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <i class="bx bx-user-circle"></i> Kelompok 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="wrapper">
+        <div class="wrapper-header">
+            <h2 class="wrapper-title">
+                Forum Diskusi
+            </h3>
+        </div>
+        <div class="wrapper-body">
+            <div class="content">
+                <div class="forum">
+                    <fieldset class="box1" style="border: double violet;">
+                        <h1 class="beranda">FORUM</h1>
+                        <p class="intro">Halo Selamat siang (user), Silahkan <a href="" class="introlink">Buat Postingan </a> Di Web Grup</p>
+                        <p class="selamatdatang">Selamat Datang, silahkan kalau ada yang ingin didiskusikan.</p>
+                        <fieldset style="border: solid black;">
+                            <legend>FORUM DISKUSI</legend>
+                            <table>
+                                <tr>
+                                    <td>NAMA</td>
+                                    <td>:</td>
+                                    <td><input type="text" name="Nama"  value="" placeholder="Nama Lengkap" ></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>NIM</td>
+                                    <td>:</td>
+                                    <td><input type="text" name="NIM" value="" placeholder="NIM Lengkap"></td>
+                                </tr>
+            
+                                <tr>
+                                    <td>PENDAPAT/PERTANYAAN/JAWABAN</td>
+                                    <td>:</td>
+                                    <td><textarea name="" id="" cols="50" rows="10" placeholder="Silahkan apa yang ingin dibahas atau ditanyakan"></textarea></td>
+                                </tr>
+            
+                                <tr>
+                                    <td><input type="button" value="Kirim"></td>
+                                </tr>
+                            </table>
+                        </fieldset>  
+                    </fieldset>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="tab">
+                        <fieldset style="border: solid black;">
+                            <legend><h1 style="color: purple;">POSTINGAN ANDA</h1> </legend>
+                            <table>
+                                <tr>
+                                    <td>NAMA</td>
+                                    <td>:</td>
+                                    <td>name</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>NIM</td>
+                                    <td>:</td>
+                                    <td>nim</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>POSTINGAN</td>
+                                    <td>:</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam a magnam cumque labore officiis vero quisquam enim dignissimos molestias, sit, iure et quaerat cupiditate ipsum perspiciatis blanditiis tenetur minima ut?</td>
+                                </tr>
+                            </table>
+                        </fieldset>  
+
+                        <input type="checkbox" id="call" class="cal">
+                        <label for="call">
+                            <p>Komentar akan muncul disini, klik ini</p>
+                        </label>
+                        <br>
+                        <div class="komen">
+                            <p class="komentar"><img src="aset/profil.jpg" alt="" width="22px" height="22px"> User21035523 Mengomentari Postingan Kamu <br><br></p>
+                            <br>
+                            <p class="komentar"><img src="aset/profil.jpg" alt="" width="22px" height="22px"> User21035523 Mengomentari Postingan Kamu <br><br></p>
+                            <br>
+                            <p class="komentar"><img src="aset/profil.jpg" alt="" width="22px" height="22px"> User21035523 Mengomentari Postingan Kamu <br><br></p>
+                            <br>
+                            <p class="komentar"><img src="aset/profil.jpg" alt="" width="22px" height="22px"> User21035523 Mengomentari Postingan Kamu <br><br></p>
+                            <br>
+                            <p class="komentar"><img src="aset/profil.jpg" alt="" width="22px" height="22px"> User21035523 Mengomentari Postingan Kamu <br><br></p>
+                            <br>
+                            <p class="komentar"><img src="aset/profil.jpg" alt="" width="22px" height="22px"> User21035523 Mengomentari Postingan Kamu <br><br></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <span>&copy; Design &amp; Develop by <strong>Kelompok 14</strong></span>
+        </div>
+        <div class="datetime">
+            <span>20 Juni 2022, 10:54 Pagi</span>
+        </div>
+    </footer>
+</body>
+</html>

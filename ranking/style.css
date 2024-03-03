@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" );
+
+
+.navbar
+{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 40px;
+      background: #19A0CB;
+      z-index: 99;
+}
+
+.container
+{
+      padding: 1em;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+}
+
+.container .title 
+{
+      margin: 30px 0px;
+      width: 100%;
+      text-align: left;
+}
+
+.container .title .box
+{
+      width: fit-content;
+      border-bottom: 2px solid #19A0CB;
+}
+
+.container .title .box h2
+{
+      color: #333;
+      padding-bottom: 10px;
+      font-weight: 600;
+      margin: 10px;
+}
+
+.container .myRank
+{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+}
+
+
+.container .myRank .headerMyCard
+{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-left: 10px;
+      color: #19A0CB;
+}
+
+.container .myRank .headerMyCard h3
+{
+      font-weight: 500;
+}
+
+
+.container .myRank .headerMyCard #reward
+{
+      color: #19A0CB;
+      font-weight: 400;
+      display: flex;
+      position: absolute;
+      right: 16px;
+      text-decoration: none;
+      padding: 3px;
+      
+}
+
+
+.container .myRank .headerMyCard #reward img
+{
+      width: 25px;
+      height: 25px;
+}
+
+.container .myRank .myCardRank
+{
+      position: relative;
+      width: 100%;
+      height: 120px;
+      margin: 10px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      /* border-top: 1px solid rgba(255, 255, 255, 1);
+      border-left: 1px solid rgba(255, 255, 255, 1);
+      backdrop-filter: blur(5px);    */
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container .myRank .myCardRank img
+{
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+}
+
+.container .myRank .myCardRank #myName
+{
+      margin-left: 15px ;
+      font-weight: 600;
+}
+
+.container .myRank .myCardRank #myNim
+{
+      font-size: 15px;
+      padding-right: 80px;
+      margin-left: 15px ;
+      font-weight: 500;
+}
+
+.container .myRank .myCardRank #myRank
+{
+      color: #19A0CB;
+      font-weight: 600;
+      font-size: 16px;
+      position: absolute;
+      top: 45px;
+      left: 26px;
+}
+
+.container .myRank .myCardRank #myScore
+{
+      font-weight: 600;
+      position: absolute;
+      top: 40px;
+      right: 36px;
+}
+
+.container .myRank .myCardRank #myScore p
+{
+      font-size: 12px;
+}
+
+.container .myRank .myCardRank #myScore h4
+{
+      padding-left: 10px;
+      color: #19A0CB;
+}
+
+.container .midContent
+{
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #19A0CB;
+}
+
+.container .midContent .midOne
+{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-left: 10px;
+      margin-bottom: 25px;
+}
+
+.container .midContent .midOne select
+{
+      padding:5px 10px;
+}
+
+#semOp
+{
+      font-size: 15px;
+      font-weight: 400;
+      border: none;
+      border-bottom: 1px solid #19A0CB;
+}
+
+.container .midContent .midOne .search
+{
+      background: #fff;
+      border-radius: 15px;
+      padding: 5px 15px;
+      display: flex;
+      position: absolute;
+      right: 16px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.container .midContent .midOne .search input
+{
+      border: none;
+      width: 250px;
+      font-weight: 250;
+}
+
+input:focus
+{
+      outline: none;
+}
+
+.container .midContent .midOne .search img
+{
+      margin-left:3px ;
+      width: 21px;
+      height: 18px;
+}
+
+.container .midContent .midTwo
+{
+      margin: 10px;
+      width: 100%;
+      display: flex;
+      color: #19A0CB;
+}
+
+.container .midContent .midTwo h3
+{
+      font-weight: 500;
+      font-size: 18px;
+
+}
+
+.container .midContent .midTwo p
+{
+      font-weight: 400;
+      font-size: 15px;
+      position: absolute;
+      right: 16px;
+}
+
+.container .rankingTable
+{
+      font-weight: 500;
+      width: 100%;
+}
+
+.container .rankingTable table
+{
+      display: block;
+      border-collapse: collapse;
+}
+
+.container .rankingTable table, tr, td
+{
+      
+      padding: 10px;
+}
+
+.container .rankingTable tbody
+{
+      padding: 10px;
+      height: 500px;
+      display: inline-block;
+      width: 100%;
+      overflow: auto;
+}
+
+
+.container .rankingTable img
+{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+}
+
+.container .rankingTable #scoreTable
+{
+      padding-left: 400px;
+
+}
+
+.container .rankingTable tbody tr:hover
+{
+      transition: 0.5s;
+      background: #19A0CB;
+      color: #fff;
+}
+
+#reward:hover
+{
+      transition: 0.2s;
+      border-radius: 5px;
+      border: 1px solid #19A0CB;
+}
+

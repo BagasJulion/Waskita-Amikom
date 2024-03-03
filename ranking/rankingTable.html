@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="navbar">Ini Navbar</div>
+      <div class="container">
+            <div class="title">
+                  <div class="box">
+                        <h2>Ranking Keaktifan</h2>
+                  </div>       
+            </div>
+            <div class="myRank">
+                  <div class="headerMyCard">
+                        <h3>Ranking saya: </h3>
+                        <a href="" id="reward">
+                              <p>Hadiah</p>
+                              <img src="hadiah.png" alt="">
+                        </a>
+                  </div>
+
+                  <div class="myCardRank">
+                        <table>
+                              <tr>
+                                    <td><p id="myRank">12/315</p></td>
+                                    <td><img src="prof1.jpg" alt=""></th>
+                                    <td>
+                                          <div>
+                                                <p id="myName">Monkey</p>
+                                                <p id="myNim">20.11.9999</p>
+                                          </div>
+                                    </td>
+                                    <td>
+                                          <div id="myScore">
+                                                <p>Score :  </p>
+                                                <h4>36</h4>
+                                          </div>
+                                    </td>
+                              </tr>
+                        </table>
+                  </div>
+            </div>
+
+            <div class="title">
+                  <div class="box">
+                        <h2>Global Ranking</h2>
+                  </div>       
+            </div>
+
+            <div class="midContent">
+                  <div class="midOne">
+                        <select id="semOp">
+                              <option>Semester 4-2022</option>
+                              <option>Semester 5-2022</option>
+                        </select>
+                        <div class="search">
+                              <input type="text" name="" id="" placeholder="cari nama/nim">
+                              <img src="search-solid.png" alt="">
+                        </div>
+                  </div>
+                  <div class="midTwo">
+                        <h3>Ranking table: </h3>
+                        <p>315 Peserta</p>
+                  </div>
+            </div>
+
+            <div class="rankingTable">
+                  <table>
+                        <tbody>
+                              <tr>      
+                                    <td>1</td>
+                                    <td><img src="prof1.jpg" alt=""></td>
+                                    <td>
+                                          <div id="nameNim">
+                                                <p>Abdillah Pramudito</p>
+                                                <p>20.11.3564</p>
+                                          </div>
+                                    </td>
+                                    <td id="scoreTable">36</td>
+                              </tr>
+                              <tr>      
+                                    <td>2</td>
+                                    <td><img src="prof1.jpg" alt=""></td>
+                                    <td>
+                                          <div id="nameNim">
+                                                <p>Abdillah Pramudito</p>
+                                                <p>20.11.3564</p>
+                                          </div>
+                                    </td>
+                                    <td id="scoreTable">36</td>
+                              </tr>
+                              <tr>      
+                                    <td>3</td>
+                                    <td><img src="prof1.jpg" alt=""></td>
+                                    <td>
+                                          <div id="nameNim">
+                                                <p>Abdillah Pramudito</p>
+                                                <p>20.11.3564</p>
+                                          </div>
+                                    </td>
+                                    <td id="scoreTable">36</td>
+                              </tr>
+                              <tr>      
+                                    <td>4</td>
+                                    <td><img src="prof1.jpg" alt=""></td>
+                                    <td>
+                                          <div id="nameNim">
+                                                <p>Abdillah Pramudito</p>
+                                                <p>20.11.3564</p>
+                                          </div>
+                                    </td>
+                                    <td id="scoreTable">36</td>
+                              </tr>
+                              <tr>      
+                                    <td>5</td>
+                                    <td><img src="prof1.jpg" alt=""></td>
+                                    <td>
+                                          <div id="nameNim">
+                                                <p>Abdillah Pramudito</p>
+                                                <p>20.11.3564</p>
+                                          </div>
+                                    </td>
+                                    <td id="scoreTable">36</td>
+                              </tr>
+                              <tr>      
+                                    <td>6</td>
+                                    <td><img src="prof1.jpg" alt=""></td>
+                                    <td>
+                                          <div id="nameNim">
+                                                <p>Abdillah Pramudito</p>
+                                                <p>20.11.3564</p>
+                                          </div>
+                                    </td>
+                                    <td id="scoreTable">36</td>
+                              </tr>
+                              <tr>      
+                                    <td>7</td>
+                                    <td><img src="prof1.jpg" alt=""></td>
+                                    <td>
+                                          <div id="nameNim">
+                                                <p>Abdillah Pramudito</p>
+                                                <p>20.11.3564</p>
+                                          </div>
+                                    </td>
+                                    <td id="scoreTable">36</td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
+      </div>
+      
+
+      <script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script>
+            VanillaTilt.init(document.querySelector(".myCardRank"), {
+            max: 25,
+            speed: 400,
+            glare: true
+
+      });
+      
+      </script>
+      
+</body>
+</html>
